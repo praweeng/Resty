@@ -2,7 +2,7 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 
-class SongList extends React.Component {
+class Portfolios extends React.Component {
 
     renderSongs() {
         return this.props.data.songs.map(song => {
@@ -38,4 +38,4 @@ const query = gql`
     }
 `;
 
-export default graphql(query)(SongList);
+export default graphql(query)(Portfolios);
