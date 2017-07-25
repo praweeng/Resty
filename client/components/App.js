@@ -4,8 +4,8 @@ import { Link } from 'react-router';
 export default ({ children }) => {
     return <div>
     <nav>
-    <div class="nav-wrapper">
-     <Link className="brand-logo">
+    <div className="nav-wrapper">
+     <Link className="brand-logo" to="/">
      CSS
      </Link>
     </div>

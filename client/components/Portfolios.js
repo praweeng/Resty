@@ -26,9 +26,9 @@ class Portfolios extends React.Component {
 
     render() {
         if(this.props.data.loading) {
-          return(  <div>
-                ...loading
-            </div>
+          return(   <div className="progress">
+      <div className="indeterminate"></div>
+  </div>
           )
         }
         return ( 

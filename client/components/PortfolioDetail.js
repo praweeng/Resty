@@ -11,9 +11,9 @@ class PortfolioDetail extends Component {
 
         if(!song) {
             return (
-                <div>
-                    ...Loading
-                </div>
+                <div className="progress">
+      <div className="indeterminate"></div>
+  </div>
             );
         }
         
@@ -23,7 +23,7 @@ class PortfolioDetail extends Component {
                 Back
                 </Link>
                 <h3> {song.title} </h3>
-                <EditCase/>
+                <EditCase songId={this.props.params.id}/>
             </div>
         );
     }

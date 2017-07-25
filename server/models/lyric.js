@@ -7,7 +7,8 @@ const LyricSchema = new Schema({
     ref: 'song'
   },
   likes: { type: Number, default: 0 },
-  content: { type: String }
+  content: { type: String },
+  link: { type: String }
 });
 
 LyricSchema.statics.like = function(id) {

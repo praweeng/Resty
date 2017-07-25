@@ -22,10 +22,11 @@ const mutation = new GraphQLObjectType({
       type: SongType,
       args: {
         content: { type: GraphQLString },
-        songId: { type: GraphQLID }
+        songId: { type: GraphQLID },
+        link: { type: GraphQLString }
       },
-      resolve(parentValue, { content, songId }) {
-        return Song.addLyric(songId, content);
+      resolve(parentValue, { content, songId, link }) {
+        return Song.addLyric(songId, content, link);
       }
     },
     likeLyric: {

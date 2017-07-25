@@ -6,3 +6,11 @@
 .material-icons {
     cursor: pointer;
 }
+
+.nav-wrapper {
+    background-color: #FAC100;
+}
+
+.brand-logo {
+    color: black !important;
+}

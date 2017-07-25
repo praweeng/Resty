@@ -15,6 +15,7 @@ const LyricType = new GraphQLObjectType({
     id: { type: GraphQLID },
     likes: { type: GraphQLInt },
     content: { type: GraphQLString },
+    link:  { type: GraphQLString },
     song: {
       type: require('./song_type'),
       resolve(parentValue) {
